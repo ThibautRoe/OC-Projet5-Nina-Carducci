@@ -1,3 +1,43 @@
+@font-face {
+	font-family: Inter;
+	src: url('../webfonts/inter-regular.woff2') format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap
+}
+
+@font-face {
+	font-family: Spectral;
+	src: url('../webfonts/spectral-extrabold.woff2') format("woff2");
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap
+}
+
+@font-face {
+	font-family: Spectral;
+	src: url('../webfonts/spectral-extrabolditalic.woff2') format("woff2");
+	font-weight: 800;
+	font-style: italic;
+	font-display: swap
+}
+
+@font-face {
+	font-family: Spectral;
+	src: url('../webfonts/spectral-italic.woff2') format("woff2");
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap
+}
+
+@font-face {
+	font-family: Spectral;
+	src: url('../webfonts/spectral-lightitalic.woff2') format("woff2");
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap
+}
+
 h3,
 h6 {
 	margin-top: 0;
@@ -6,44 +46,149 @@ h6 {
 	line-height: 1.2
 }
 
-@font-face {
-	font-family: Inter;
-	src: url('https://thibautroe.github.io/assets/webfonts/inter-regular.woff2') format("woff2");
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap
+p,
+ul {
+	margin-top: 0;
+	margin-bottom: 1rem
 }
 
-@font-face {
-	font-family: Spectral;
-	src: url('https://thibautroe.github.io/assets/webfonts/spectral-extrabold.woff2') format("woff2");
+.nav,
+.nav ul {
+	margin-bottom: 0
+}
+
+#about,
+.carousel,
+.carousel-inner,
+.carousel-item {
+	position: relative
+}
+
+body {
+	font-family: var(--bs-body-font-family);
+	font-size: var(--bs-body-font-size);
+	font-weight: var(--bs-body-font-weight);
+	line-height: var(--bs-body-line-height);
+	color: var(--bs-body-color);
+	text-align: var(--bs-body-text-align);
+	background-color: var(--bs-body-bg);
+	-webkit-text-size-adjust: 100%;
+	max-width: 1920px;
+	margin: auto
+}
+
+blockquote,
+figure {
+	margin: 0 0 1rem
+}
+
+button {
+	border-radius: 0;
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	text-transform: none
+}
+
+::-webkit-file-upload-button {
+	font: inherit;
+	font: inherit;
+	-webkit-appearance: button
+}
+
+.quote,
+.quote__author,
+.quote__text {
+	font-family: Spectral
+}
+
+@media (min-width:1200px) {
+	h1 {
+		font-size: 2.5rem
+	}
+
+	h3 {
+		font-size: 1.75rem
+	}
+
+	.container {
+		max-width: 1140px
+	}
+}
+
+.nav {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 0;
+	list-style: none
+}
+
+.carousel-inner {
+	width: 100%;
+	overflow: hidden
+}
+
+.carousel-item {
+	display: none;
+	float: left;
+	width: 100%;
+	margin-right: -100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden
+}
+
+#about,
+.top-header {
+	padding-inline: 100px
+}
+
+.top-header {
+	background-color: #fff;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	padding-block: 30px;
+	align-items: center
+}
+
+.nav ul {
+	display: flex;
+	list-style-type: none;
+	font-size: 14px
+}
+
+.social-link img {
+	width: 20px
+}
+
+#about {
+	display: flex;
+	background-color: #f6d2b8;
+	padding-block: 100px
+}
+
+.picture img {
+	width: 100%
+}
+
+.quote {
+	font-style: italic;
+	width: 70%;
+	margin: auto;
+	padding-block: 3em
+}
+
+.quote__text {
+	font-style: italic;
+	font-weight: 300
+}
+
+.quote__author {
 	font-weight: 800;
-	font-style: normal;
-	font-display: swap
-}
-
-@font-face {
-	font-family: Spectral;
-	src: url('https://thibautroe.github.io/assets/webfonts/spectral-extrabolditalic.woff2') format("woff2");
-	font-weight: 800;
-	font-style: italic;
-	font-display: swap
-}
-
-@font-face {
-	font-family: Spectral;
-	src: url('https://thibautroe.github.io/assets/webfonts/spectral-italic.woff2') format("woff2");
-	font-weight: 400;
-	font-style: italic;
-	font-display: swap
-}
-
-@font-face {
-	font-family: Spectral;
-	src: url('https://thibautroe.github.io/assets/webfonts/spectral-lightitalic.woff2') format("woff2");
-	font-weight: 300;
-	font-style: italic;
-	font-display: swap
+	font-size: 22px
 }
 
 :root {
@@ -466,7 +611,8 @@ body {
 }
 
 .social-link img {
-	width: 20px
+	width: 20px;
+	aspect-ratio: 1
 }
 
 #about {
@@ -495,7 +641,8 @@ body {
 }
 
 .picture img {
-	width: 100%
+	width: 100%;
+	aspect-ratio: 1
 }
 
 #about-me {
@@ -551,6 +698,10 @@ body {
 	font-family: Spectral;
 	font-weight: 800;
 	font-size: 22px
+}
+
+.carousel-item img {
+	aspect-ratio: 1920/888
 }
 
 @media all and (max-width:1180px) {
