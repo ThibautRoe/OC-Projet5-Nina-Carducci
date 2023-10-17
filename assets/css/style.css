@@ -80,7 +80,7 @@ body {
 
 .social-link img {
 	width: 20px;
-	aspect-ratio: 1
+	aspect-ratio: 1/1
 }
 
 #about {
@@ -110,7 +110,7 @@ body {
 
 .picture img {
 	width: 100%;
-	aspect-ratio: 1
+	aspect-ratio: 1/1
 }
 
 #about-me {
