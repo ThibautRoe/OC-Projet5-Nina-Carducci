@@ -38,21 +38,19 @@
 	font-display: swap
 }
 
+* {
+	font-family: "Inter";
+	font-style: normal;
+	scroll-padding-top: 99px
+}
+
 body {
 	max-width: 1920px;
 	margin: auto
 }
 
-* {
-	font-family: "Inter";
-	font-style: normal
-}
-
 .top-header {
 	background-color: white;
-	position: sticky;
-	top: 0;
-	z-index: 1000;
 	display: flex;
 	justify-content: space-between;
 	padding-inline: 100px;
@@ -125,11 +123,15 @@ body {
 	font-size: 30px
 }
 
-.about-me__introduction {
+#about-me p.about-me__introduction {
 	font-family: "Spectral";
 	font-weight: 800;
 	font-style: italic;
-	width: 60%
+	width: 60%;
+	font-size: 1rem;
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	line-height: 1.2
 }
 
 #about-me p {
@@ -149,7 +151,7 @@ body {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
 	color: #fff;
-	background-color: #beb45a;
+	background-color: #B85E1E;
 	border-radius: 0
 }
 
@@ -304,7 +306,46 @@ input[type="submit"] {
 	aspect-ratio: 1920/888
 }
 
+header {
+	position: sticky;
+	top: 0;
+	z-index: 1000
+}
+
+#gallery .title,
+#services .title,
+.form-container h2 {
+	font-size: 1.75rem
+}
+
+blockquote p.quote__text {
+	font-size: 2.5rem;
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	line-height: 1.2
+}
+
+@media all and (max-width: 1199px) {
+
+	#gallery .title,
+	#services .title,
+	.form-container h2 {
+		font-size: calc(1.3rem + .6vw)
+	}
+
+	blockquote p.quote__text {
+		font-size: calc(1.375rem + 1.5vw)
+	}
+
+}
+
 @media all and (max-width: 1180px) {
+
+	#about-me p,
+	#about-me p.about-me__introduction {
+		width: 100%
+	}
+
 	.picture {
 		flex: 2
 	}
@@ -319,10 +360,6 @@ input[type="submit"] {
 		margin-bottom: 1em
 	}
 
-	#about-me h6,
-	#about-me p {
-		width: 100%
-	}
 }
 
 @media all and (max-width: 1000px) {
@@ -391,7 +428,17 @@ input[type="submit"] {
 	}
 }
 
+@media all and (max-width: 732px) {
+	* {
+		scroll-padding-top: 129px
+	}
+}
+
 @media all and (max-width: 650px) {
+	* {
+		scroll-padding-top: 168px
+	}
+
 	.top-header {
 		flex-direction: column;
 		padding-inline: 0
