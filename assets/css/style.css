@@ -325,6 +325,12 @@ blockquote p.quote__text {
 	line-height: 1.2
 }
 
+#about-me h3 {
+	font-family: Spectral;
+	font-style: italic;
+	font-weight: 300
+}
+
 @media all and (max-width: 1199px) {
 
 	#gallery .title,
@@ -336,7 +342,6 @@ blockquote p.quote__text {
 	blockquote p.quote__text {
 		font-size: calc(1.375rem + 1.5vw)
 	}
-
 }
 
 @media all and (max-width: 1180px) {
@@ -359,7 +364,6 @@ blockquote p.quote__text {
 		margin-top: 0;
 		margin-bottom: 1em
 	}
-
 }
 
 @media all and (max-width: 1000px) {

@@ -8,7 +8,7 @@ h2 {
 
 @font-face {
 	font-family: Inter;
-	src: url('https://thibautroe.github.io/assets/webfonts/inter-regular.woff2') format("woff2");
+	src: url("https://thibautroe.github.io/OC-Projet5-Nina-Carducci/assets/webfonts/inter-regular.woff2") format("woff2");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap
@@ -16,7 +16,7 @@ h2 {
 
 @font-face {
 	font-family: Spectral;
-	src: url('https://thibautroe.github.io/assets/webfonts/spectral-extrabold.woff2') format("woff2");
+	src: url("https://thibautroe.github.io/OC-Projet5-Nina-Carducci/assets/webfonts/spectral-extrabold.woff2") format("woff2");
 	font-weight: 800;
 	font-style: normal;
 	font-display: swap
@@ -24,7 +24,7 @@ h2 {
 
 @font-face {
 	font-family: Spectral;
-	src: url('https://thibautroe.github.io/assets/webfonts/spectral-extrabolditalic.woff2') format("woff2");
+	src: url("https://thibautroe.github.io/OC-Projet5-Nina-Carducci/assets/webfonts/spectral-extrabolditalic.woff2") format("woff2");
 	font-weight: 800;
 	font-style: italic;
 	font-display: swap
@@ -32,7 +32,7 @@ h2 {
 
 @font-face {
 	font-family: Spectral;
-	src: url('https://thibautroe.github.io/assets/webfonts/spectral-italic.woff2') format("woff2");
+	src: url("https://thibautroe.github.io/OC-Projet5-Nina-Carducci/assets/webfonts/spectral-italic.woff2") format("woff2");
 	font-weight: 400;
 	font-style: italic;
 	font-display: swap
@@ -40,7 +40,7 @@ h2 {
 
 @font-face {
 	font-family: Spectral;
-	src: url('https://thibautroe.github.io/assets/webfonts/spectral-lightitalic.woff2') format("woff2");
+	src: url("https://thibautroe.github.io/OC-Projet5-Nina-Carducci/assets/webfonts/spectral-lightitalic.woff2") format("woff2");
 	font-weight: 300;
 	font-style: italic;
 	font-display: swap
