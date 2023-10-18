@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Nina Carducci - Photographe professionnelle sur Bordeaux</title>
 	<meta name="description"
 		content="Capturez vos moments les plus précieux au travers de mon regard, mon approche, ma technique et gardez un souvenir impérissable.">
@@ -13,19 +14,23 @@
 	<meta property="og:description"
 		content="Capturez vos moments les plus précieux et gardez un souvenir impérissable.">
 	<meta property="og:image"
-		content="https://thibautroe.github.io/OC-Projet5-Nina-Carducci/assets/images/og-card.webp">
+		content="https://thibautroe.github.io/OC-Projet5-Nina-Carducci/assets/images/social/og-card.webp">
 	<meta property="og:image:type" content="image/webp">
 	<meta property="og:image:alt" content="Self portrait de la photographe Nina Carducci">
 	<!-- End meta Open Graph / Facebook -->
 	<!-- Begin meta Twitter -->
 	<meta name="twitter:title" content="Nina Carducci - Photographe sur Bordeaux">
 	<!-- End meta Twitter -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Begin loading critical CSS -->
 	<link rel="stylesheet" href="assets/css/critical.min.css">
+	<!-- End loading critical CSS -->
+	<!-- Begin defering final CSS -->
 	<link rel="preload" href="assets/bootstrap/bootstrap.min.css" as="style" type="text/css"
 		onload="this.onload = null; this.rel = 'stylesheet';">
 	<link rel="preload" href="assets/css/style.min.css" as="style" type="text/css"
 		onload="this.onload = null; this.rel = 'stylesheet';">
+	<!-- End defering final CSS -->
+	<!-- Begin preloading ressources -->
 	<link rel="preload" href="assets/images/instagram.webp" as="image" type="image/webp">
 	<link rel="preload" media="(max-width: 650px)"
 		imagesrcset="assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-650w.webp" as="image" type="image/webp">
@@ -37,10 +42,55 @@
 	<link rel="preload" href="assets/webfonts/spectral-extrabolditalic.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="assets/webfonts/spectral-italic.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="assets/webfonts/spectral-lightitalic.woff2" as="font" type="font/woff2" crossorigin>
+	<!-- End preloading ressources -->
+	<!-- Begin loading defered or asynced scripts -->
 	<script src="assets/bootstrap/bootstrap.bundle.min.js" async></script>
 	<script src="assets/jquery/jquery-3.4.1.min.js" defer></script>
 	<script src="assets/js/maugallery.min.js" defer></script>
 	<script src="assets/js/scripts.min.js" defer></script>
+	<!-- End loading defered or asynced scripts -->
+	<!-- Begin structured data / JSON-LD -->
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "LocalBusiness",
+		  "image": [
+			"https://thibautroe.github.io/OC-Projet5-Nina-Carducci/assets/images/social/nina1x1.webp",
+			"https://thibautroe.github.io/OC-Projet5-Nina-Carducci/assets/images/social/nina4x3.webp",
+			"https://thibautroe.github.io/OC-Projet5-Nina-Carducci/assets/images/social/nina16x9.webp"
+		   ],
+		  "name": "Nina Carducci",
+		  "address": {
+			"@type": "PostalAddress",
+			"streetAddress": "68 avenue Alsace-Lorraine",
+			"addressLocality": "Bordeaux",
+			"postalCode": "33200",
+			"addressCountry": "FR"
+		  },
+		  "geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 44.846581174064994, 
+			"longitude": -0.6065366381313335
+		  },
+		  "url": "https://thibautroe.github.io/OC-Projet5-Nina-Carducci/",
+		  "telephone": "+33556677889",
+		  "openingHoursSpecification": [
+			{
+			  "@type": "OpeningHoursSpecification",
+			  "dayOfWeek": [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday"
+			  ],
+			  "opens": "10:00",
+			  "closes": "19:00"
+			}
+		  ]
+		}
+		</script>
+	<!-- End structured data / JSON-LD -->
 	<!-- Begin Favicon -->
 	<link rel="icon" href="favicon.svg" type="image/svg+xml">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
