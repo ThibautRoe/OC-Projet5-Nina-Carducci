@@ -15,6 +15,6 @@ Fix bugs & optimize performance/SEO/accessibility of a professional photographer
 -   CSS
 -   JS
 
-### 🧑🏻‍💻 Usage
+## 🧑🏻‍💻 Usage
 
 Nothing fancy: open the project with VS Code, start a Live Server
